@@ -1,0 +1,8 @@
+{
+    "buildCommand": null,
+    "installCommand": null,
+    "outputDirectory": "tmp",
+    "framework": null,
+    "cleanUrls": true,
+    "trailingSlash": false
+}
