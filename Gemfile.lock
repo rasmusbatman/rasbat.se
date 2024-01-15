@@ -1,0 +1,13 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    redcarpet (3.6.0)
+
+PLATFORMS
+  x64-mingw-ucrt
+
+DEPENDENCIES
+  redcarpet (~> 3.3, >= 3.3.4)
+
+BUNDLED WITH
+   2.4.10
