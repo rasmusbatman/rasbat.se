@@ -2,12 +2,14 @@ GEM
   remote: https://rubygems.org/
   specs:
     redcarpet (3.6.0)
+    tomlrb (2.0.3)
 
 PLATFORMS
   x64-mingw-ucrt
 
 DEPENDENCIES
   redcarpet (~> 3.3, >= 3.3.4)
+  tomlrb (~> 2.0, >= 2.0.3)
 
 BUNDLED WITH
    2.4.10
