@@ -1,0 +1,37 @@
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_fonts/Variable_fonts_guide */
+
+@font-face {
+    font-family: 'RedHatText';
+    src: url('/fonts/RedHatText.woff2') format('woff2-variations');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'RedHatText';
+    src: url('/fonts/RedHatText-Italic.woff2') format('woff2-variations');
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'RedHatDisplay';
+    src: url('/fonts/RedHatDisplay.woff2') format('woff2-variations');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'RedHatDisplay';
+    src: url('/fonts/RedHatDisplay-Italic.woff2') format('woff2-variations');
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'RedHatMono';
+    src: url('/fonts/RedHatMono.woff2') format('woff2-variations');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'RedHatMono';
+    src: url('/fonts/RedHatMono-Italic.woff2') format('woff2-variations');
+    font-style: italic;
+}

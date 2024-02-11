@@ -21,7 +21,9 @@ class App
         end
 
         def _document
-            App::Document.new App::hash @path
+            puts @basename
+
+            "a"
         end
     end
 end

@@ -18,7 +18,7 @@ class App
                 @title = self._title document.title
                 @description = _meta 'description', document.description
                 @keywords = _meta 'keywords', self._keywords(document.keywords)
-                @robots = _meta 'robots', document.hash.dig(:document, :robots)
+                @robots = _meta 'robots', self._robots(document.hash.dig(:document, :robots))
                 @generator = _meta 'generator', self._generator
             end
 
@@ -33,19 +33,11 @@ class App
             end
 
             def _lang value
-                if not value
-                    "<html>"
-                else
-                    "<html lang=\"#{value}\">"
-                end
+                value ? "<html lang=\"#{value}\">" : "<html>"
             end
 
             def _title value
-                if not value
-                    nil
-                else
-                    "<title>#{value}</title>"
-                end
+                value ? "<title>#{value}</title>" : nil
             end
 
             def _keywords array

@@ -15,12 +15,12 @@ class App
 
         def initialize hash
             @hash = hash
-            @favicon = hash.dig :document, :favicon
             @title = hash.dig :document, :title
             @description = hash.dig :document, :description
             @keywords = hash.dig :document, :keywords
             @author = hash.dig :document, :author
             @meta = App::Document::Meta.new self
+            @favicon = hash.dig :document, :favicon
         end
 
         def favicon?

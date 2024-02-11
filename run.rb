@@ -14,10 +14,13 @@ h = {
         robots: {
             index: true,
             follow: false
-        }
+        },
+        favicon: '/favicon.ico'
     }
 }
 
 d = App::Document.new h
 
-puts d.meta.generator
+puts d.title
+
+puts d.meta.robots

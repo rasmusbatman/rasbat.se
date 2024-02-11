@@ -3,11 +3,11 @@
 # file, You can obtain one at https://mozilla.org/MPL/2.0/.
 
 class App
-    def insert basename
-        path = File.join App::ROOT, self.config[:path][:inserts], basename + '.erb'
+    class Metadata
+        def initialize path
 
-        template = ERB.new File.read(path)
+        end
 
-        eval template.src
+        private
     end
 end
