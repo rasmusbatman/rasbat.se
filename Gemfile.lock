@@ -1,7 +1,11 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    ffi (1.16.3-x64-mingw-ucrt)
     redcarpet (3.6.0)
+    rouge (4.2.0)
+    sassc (2.4.0)
+      ffi (~> 1.9)
     tomlrb (2.0.3)
 
 PLATFORMS
@@ -9,6 +13,8 @@ PLATFORMS
 
 DEPENDENCIES
   redcarpet (~> 3.3, >= 3.3.4)
+  rouge (~> 4.2)
+  sassc (~> 2.4)
   tomlrb (~> 2.0, >= 2.0.3)
 
 BUNDLED WITH

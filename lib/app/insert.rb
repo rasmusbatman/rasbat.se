@@ -4,7 +4,7 @@
 
 class App
     def insert basename
-        path = File.join App::ROOT, self.config[:path][:inserts], basename + '.erb'
+        path = File.join @config.path(App::INSERTS), basename + '.erb'
 
         template = ERB.new File.read(path)
 

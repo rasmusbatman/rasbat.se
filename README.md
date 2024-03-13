@@ -23,34 +23,8 @@ The program will only look inside the route's containing directory
 for files to use- there is no recursion. Keys found in `__dir__.toml`
 will overwrite those in `/config.toml`. Likewise, `<Route>.toml` will
 overwrite keys found in `/config.toml` and `__dir__.toml` since it is
-the most specific entry.
-
-Below is the complete syntax for all options in this project.
-Note, however, that additional keys can be freely created if need be.
-
-```toml
-[path] # (ALL REQUIRED)
-inserts = <String> # app/inserts
-layouts = <String> # app/layouts
-models = <String> # app/models
-routes = <String> # app/routes
-static = <String> # app/static
-output = <String> # build
-[build]
-layout = <String> # default = layouts/default.erb (REQUIRED)
-model = <String> # default = models/default.erb (REQUIRED)
-parser = <String> # assumes from file extension; use html, erb, md, etc 
-[document]
-favicon = <Boolean> # whether or not it should be included
-lang = <String> # see https://html.spec.whatwg.org/multipage/dom.html#attr-lang
-title = <String>
-description = <String>
-keywords = <StringArray> # case-sensitive
-author = <String>
-[document.robots]
-index = <Boolean> # true = index, false = noindex
-follow = <Boolean> # true = follow, false = nofollow
-```
+the most specific entry. An example config is included within this project,
+however, the actual config is also committed since it gets deployed on Vercel.
 
 #### § 1.1. Caveats
 

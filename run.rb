@@ -19,8 +19,16 @@ h = {
     }
 }
 
+app = App.new
+
+app.build
+
+#route = App::Route.new "/test/path/thing.rb"
+
+"""
 d = App::Document.new h
 
 puts d.title
 
 puts d.meta.robots
+"""

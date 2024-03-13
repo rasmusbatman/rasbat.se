@@ -1,0 +1,24 @@
+[path] # Relative to where run.rb is located
+inserts = 'app/inserts'
+layouts = 'app/layouts'
+models = 'app/models'
+routes = 'app/routes'
+static = 'app/static'
+output = 'app/output'
+
+[build]
+layout = 'default' # Looks at layouts/<value>.erb
+model = 'default' # Looks at models/<value>.erb
+#parser = 'md' # leave unassigned to use file extension, otherwise specify html, erb, md, etc
+
+[document]
+favicon = true # Whether or not the favicon gets inserted
+lang = 'en' # see https://html.spec.whatwg.org/multipage/dom.html#attr-lang
+title = 'Example Document'
+description = 'This sentence will appear in the head element.'
+keywords = ['tech', 'update', 'cool'] # Specifying these here would make them apply across all documents
+author = 'Your Name Here'
+
+[document.robots]
+index = false # true = index, false = noindex
+follow = false # true = follow, false = nofollow

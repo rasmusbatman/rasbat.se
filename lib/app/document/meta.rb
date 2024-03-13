@@ -14,11 +14,11 @@ class App
             attr_reader :generator
 
             def initialize document
-                @lang = self._lang document.hash.dig(:document, :lang)
+                @lang = self._lang document.data.dig('document', 'lang')
                 @title = self._title document.title
                 @description = _meta 'description', document.description
                 @keywords = _meta 'keywords', self._keywords(document.keywords)
-                @robots = _meta 'robots', self._robots(document.hash.dig(:document, :robots))
+                @robots = _meta 'robots', self._robots(document.data.dig('document', 'robots'))
                 @generator = _meta 'generator', self._generator
             end
 
@@ -44,8 +44,8 @@ class App
                 array ? array.join(', ') : nil
             end
     
-            def _robots hash
-                hash ? "#{hash[:index] ? 'index' : 'noindex'}, #{hash[:follow] ? 'follow' : 'nofollow'}" : nil
+            def _robots data
+                data ? "#{data['index'] ? 'index' : 'noindex'}, #{data['follow'] ? 'follow' : 'nofollow'}" : nil
             end
     
             def _generator
