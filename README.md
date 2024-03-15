@@ -1,36 +1,47 @@
-# rasbat.se
+# Astro Starter Kit: Minimal
 
-This is the repo for my website at https://rasbat.se
+```sh
+npm create astro@latest -- --template minimal
+```
 
-I'm making my own Static Site Generator written in Ruby
+[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/minimal)
+[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/minimal)
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/minimal/devcontainer.json)
 
-## How it Works
+> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
 
-### § 1. The Config File
+## 🚀 Project Structure
 
-This project makes use of [TOML](https://toml.io/) using the [Tomlrb](https://github.com/fbernier/tomlrb) gem.
+Inside of your Astro project, you'll see the following folders and files:
 
-In the build process of a route, the program will use `/config.toml`
-as the base and overwrite it with new data found in succeeding files.
-Specifically, it adheres to the following hierarchy, in the specified
-order:
+```text
+/
+├── public/
+├── src/
+│   └── pages/
+│       └── index.astro
+└── package.json
+```
 
-1. `/config.toml`
-2. `/routes/<PathToRoute>/__dir__.toml` (if it exists)
-3. `/routes/<PathToRoute>/<Route>.toml` (if it exists)
+Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
 
-The program will only look inside the route's containing directory
-for files to use- there is no recursion. Keys found in `__dir__.toml`
-will overwrite those in `/config.toml`. Likewise, `<Route>.toml` will
-overwrite keys found in `/config.toml` and `__dir__.toml` since it is
-the most specific entry. An example config is included within this project,
-however, the actual config is also committed since it gets deployed on Vercel.
+There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
 
-#### § 1.1. Caveats
+Any static assets, like images, can be placed in the `public/` directory.
 
-In Ruby, this overwriting of key/value pairs is done using something
-called "deep merging" with hashes. The project's implementation of
-deep merging (it's not a standard Ruby thing) only merges nested hashes,
-any other type of value simply gets replaced with the new one. People have
-made implementations that also factor in arrays, combining the array elements,
-but I chose not to use that for the sake of simplicity.
+## 🧞 Commands
+
+All commands are run from the root of the project, from a terminal:
+
+| Command                   | Action                                           |
+| :------------------------ | :----------------------------------------------- |
+| `npm install`             | Installs dependencies                            |
+| `npm run dev`             | Starts local dev server at `localhost:4321`      |
+| `npm run build`           | Build your production site to `./dist/`          |
+| `npm run preview`         | Preview your build locally, before deploying     |
+| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
+| `npm run astro -- --help` | Get help using the Astro CLI                     |
+
+## 👀 Want to learn more?
+
+Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).

@@ -1,8 +1,0 @@
-{
-    "buildCommand": "ruby run.rb",
-    "installCommand": "bundle install",
-    "outputDirectory": "tmp",
-    "framework": null,
-    "cleanUrls": true,
-    "trailingSlash": false
-}
