@@ -1,0 +1,8 @@
+[directories]
+src = 'src'
+content = 'content'
+data = 'data'
+layouts = 'layouts'
+partials = 'partials'
+routes = 'routes'
+static = 'static'
