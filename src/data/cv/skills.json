@@ -1,0 +1,20 @@
+{
+    "levels": {
+        "standard": [
+            "Novice",
+            "Intermediate",
+            "Advanced",
+            "Expert"
+        ]
+    },
+    "categories": [
+        {
+            "title": "Programming",
+            "subtitle": "Industry Knowledge"
+        },
+        {
+            "title": "Programming",
+            "subtitle": "General Knowledge"
+        }
+    ]
+}

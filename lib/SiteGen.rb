@@ -13,19 +13,21 @@ class SiteGen end
 
 # local gems
 require_relative './SiteGen/Exception'
-require_relative './SiteGen/Parse/metadata'
-require_relative './SiteGen/Data'
 require_relative './SiteGen/Pipeline'
+require_relative './SiteGen/Route'
+require_relative './SiteGen/Metadata'
+require_relative './SiteGen/Data'
 
 def SiteGen::build
 
-    data = SiteGen::Data.new
-    
-    puts data.get :navbar
+    test = SiteGen::Route.new
 
     # ...
+
 end
 
 def SiteGen::clean
+
     # ...
+
 end

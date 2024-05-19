@@ -1,0 +1,41 @@
+{
+    "levels": [
+        "Wants to learn",
+        "Novice",
+        "Intermediate",
+        "Advanced",
+        "Expert"
+    ],
+    "items": [
+        {
+            "name": "Crestron SIMPL Windows",
+            "level": 3,
+            "weight": 1000
+        },
+        {
+            "name": "Crestron SIMPL+",
+            "level": 3,
+            "weight": 1000
+        },
+        {
+            "name": "Crestron SIMPL#",
+            "level": 2,
+            "weight": 1000
+        },
+        {
+            "name": "AMX NetLinx",
+            "level": 2,
+            "weight": 1000
+        },
+        {
+            "name": "Kramer Control",
+            "level": 2,
+            "weight": 100
+        },
+        {
+            "name": "Q-SYS Control",
+            "level": 1,
+            "weight": 100
+        }
+    ]
+}

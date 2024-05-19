@@ -1,0 +1,56 @@
+{
+    "levels": [
+        "Wants to learn",
+        "Novice",
+        "Intermediate",
+        "Advanced",
+        "Expert"
+    ],
+    "items": [
+        {
+            "name": "Ruby",
+            "level": 2,
+            "weight": 1000
+        },
+        {
+            "name": "Python",
+            "level": 2,
+            "weight": 1000
+        },
+        {
+            "name": "JavaScript",
+            "level": 2,
+            "weight": 1000
+        },
+        {
+            "name": "TypeScript",
+            "level": 1,
+            "weight": 1000
+        },
+        {
+            "name": "C",
+            "level": 1,
+            "weight": 1000
+        },
+        {
+            "name": "C++",
+            "level": 1,
+            "weight": 1000
+        },
+        {
+            "name": "C#",
+            "level": 2,
+            "weight": 1000
+        },
+        {
+            "name": "Java",
+            "level": 1,
+            "weight": 1000
+        },
+        {
+            "name": "Rust",
+            "level": 0,
+            "weight": 1000
+        }
+    ]
+}

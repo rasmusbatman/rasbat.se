@@ -1,5 +1,7 @@
 [build]
 layout = ['standard', 'base']
+[site]
+title = "Rasmus Båtman"
 [page]
-title = "nil"
+title = false
 description = "Hi."
